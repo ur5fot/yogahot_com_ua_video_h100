@@ -6,14 +6,12 @@ function video12() {
         delta = 0,// недо, пере скролл
         animateDuration = 500,// время сролла
         videoDuration = 0, //задержка перед воспроизведение видео
-        videoFoto = 'https://pp.vk.me/c627820/v627820058/1bc3c/QxjtAHfAghk.jpg';
 
-
-    var video1 = document.getElementById('video12');
-    var videoShow = document.querySelectorAll('[data-video-show]');
-    var scrollTo = document.querySelector(classScrollTo);
-    var down = document.getElementById('down');
-    var main = document.getElementById('main-video');
+        video1 = document.getElementById('video12'),
+        videoShow = document.querySelectorAll('[data-video-show]'),
+        scrollTo = document.querySelector(classScrollTo),
+        down = document.getElementById('down'),
+        main = document.getElementById('main-video');
 
 //         проигровать видео с задежкой  videoDuration
     setTimeout(function () {
@@ -30,9 +28,7 @@ function video12() {
 
 
     //  показ блоков после видео и фона после видео
-
     video1.addEventListener("ended", function () {
-        //video1.src = videoFoto;
         for (var i = 0; i < videoShow.length; i++) {
             var videoShowAttr = videoShow[i].getAttribute('data-video-show');
             videoShow[i].classList.add(videoShowAttr);
