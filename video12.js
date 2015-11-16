@@ -10,7 +10,7 @@ function video12() {
         video1 = document.getElementById('video12'),
         videoShow = document.querySelectorAll('[data-video-show]'),
         scrollTo = document.querySelector(classScrollTo),
-        videoBg = document.querySelector(".video-bg"),
+        videoBg = document.querySelector('.video-bg'),
         down = document.getElementById('down'),
         main = document.getElementById('main-video');
 

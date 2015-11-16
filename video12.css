@@ -29,6 +29,7 @@ body {
 
 .video12 {
   opacity: 1;
+  transition: opacity .5s;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,6 +43,15 @@ body {
 
 .video12-sh {
   opacity: 0; }
+
+.video-grad {
+  position: absolute;
+  box-shadow: inset 0px -100px rgba(170, 255, 170, 0.5);
+  z-index: -100;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
 
 .main-video {
   width: 100%; }
