@@ -24,6 +24,7 @@ function video12() {
 //        на весь экран проверяем с интервавлом
     setInterval(function () {
         main.style.height = Math.round(document.documentElement.clientHeight) + 'px';
+        //document.documentElement.style.height = Math.round(document.documentElement.clientHeight) + 'px';
     }, 1500);
 
 

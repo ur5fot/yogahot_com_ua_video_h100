@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box; }
 
+html {
+  background: url("https://pp.vk.me/c627820/v627820058/1bc3c/QxjtAHfAghk.jpg") #000 no-repeat center center;
+  background-size: cover; }
+
 .video-bg {
   background: url("https://pp.vk.me/c627820/v627820058/1bc3c/QxjtAHfAghk.jpg") #000 no-repeat center center fixed;
   background-size: cover;
@@ -8,7 +12,7 @@
   transition: opacity .5s;
   margin: 0;
   padding: 0;
-  position: fixed;
+  position: relative;
   z-index: -99;
   left: 0;
   right: 0;
