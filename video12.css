@@ -1,43 +1,49 @@
 * {
   box-sizing: border-box; }
 
-html {
+body {
+  margin: 0; }
+
+.wrapper-bg {
   background: url("https://pp.vk.me/c627820/v627820058/1bc3c/QxjtAHfAghk.jpg") #000 no-repeat center center;
-  background-size: cover; }
+  position: fixed;
+  z-index: -102;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
 
 .video-bg {
-  background: url("https://pp.vk.me/c627820/v627820058/1bc3c/QxjtAHfAghk.jpg") #000 no-repeat center center fixed;
+  background: url("https://pp.vk.me/c627820/v627820058/1bc3c/QxjtAHfAghk.jpg") #000 no-repeat center center;
   background-size: cover;
   opacity: 1;
   transition: opacity .5s;
   margin: 0;
   padding: 0;
   position: relative;
-  z-index: -99;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0; }
+  z-index: 0;
+  width: 100%; }
 
 .video-bg-sh {
-  opacity: 0; }
-
-body {
-  margin: 0; }
+  opacity: 1; }
 
 .video12 {
-  position: fixed;
+  opacity: 1;
+  position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
+  z-index: -101;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%); }
 
-#main-video {
+.video12-sh {
+  opacity: 0; }
+
+.main-video {
   width: 100%; }
 
 .block1, .block2, .block3 {
@@ -81,6 +87,8 @@ body {
 
 .main {
   margin-top: -50px;
-  background: rgba(187, 187, 187, 0.5); }
+  background: rgba(187, 187, 187, 0.5);
+  position: relative;
+  z-index: 2; }
 
 /*# sourceMappingURL=video12.css.map */

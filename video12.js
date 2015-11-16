@@ -10,6 +10,7 @@ function video12() {
         video1 = document.getElementById('video12'),
         videoShow = document.querySelectorAll('[data-video-show]'),
         scrollTo = document.querySelector(classScrollTo),
+        videoBg = document.querySelector(".video-bg"),
         down = document.getElementById('down'),
         main = document.getElementById('main-video');
 
@@ -19,12 +20,13 @@ function video12() {
     }, videoDuration);
 
     //  на весь экран
-    main.style.height = Math.round(document.documentElement.clientHeight) + 'px';
+    videoBg.style.height = Math.round(document.documentElement.clientHeight) + 'px';
+    //wrapperBg.style.height = Math.round(document.documentElement.clientHeight) + 'px';
 
 //        на весь экран проверяем с интервавлом
     setInterval(function () {
-        main.style.height = Math.round(document.documentElement.clientHeight) + 'px';
-        //document.documentElement.style.height = Math.round(document.documentElement.clientHeight) + 'px';
+        videoBg.style.height = Math.round(document.documentElement.clientHeight) + 'px';
+        //wrapperBg.style.height = Math.round(document.documentElement.clientHeight) + 'px';
     }, 1500);
 
 
